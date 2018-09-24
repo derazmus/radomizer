@@ -18,6 +18,10 @@ function answer() {
     //make random choice
     var random = choices[Math.floor(Math.random() * choices.length)];
 
-    console.log(random)
+    console.log(random);
+
+    //display on HTML
+    document.getElementById("Decisions").innerHTML = random;
+  	
 
 };
