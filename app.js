@@ -1,5 +1,25 @@
-//take data from imputs, put into array, make radom choice from that array and display in results box. 
 
+
+//create input fields
+
+// function addInputFields(){
+//     event.preventDefault();
+
+//     //grab number from text field
+//     var numberDecisions = document.getElementById("number").value;
+//     console.log(numberDecisions);
+
+//     //create that number of input fields in the proper div
+//     var div = document.createElement('div')
+
+// }
+
+function changeIt() {
+    event.preventDefault();
+
+    var i = 1;
+    choiceDiv.innerHTML = choiceDiv.innerHTML + "<input type = 'text' name = 'choice'>"
+}
 
 //empty array of choices
 
