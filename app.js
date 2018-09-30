@@ -1,37 +1,36 @@
-//take items entered and display on screen in list
+
+// empty array for options to go into
+
+var list = [];
+
+// aread where options are going to be displayed
+var areaToDisplay = document.getElementById("itemsList");
+
 function addToList() {
     event.preventDefault();
-    var choice = document.getElementById('choiceItems').value;
-    console.log(choice);
+
+    //grab what is typed into input
+
+    var text = document.getElementById("options").value;
+
+    //push what is typed into input into the list array
+    list.push(text);
+    //display what is in the list array on screen in the set area
+    areaToDisplay.innerHTML = list
+
+    //console.log(list);
+
+    }
+
+function changeIt(){
+    event.preventDefault();
+    //randomly select item from list array
+    var random = list[Math.floor(Math.random() * list.length)];
+    //display on sceen in set area
+    document.getElementById("Decisions").innerHTML = random;
 }
-// function changeIt() {
-//     event.preventDefault();
 
-//     var i = 1;
-//     choiceDiv.innerHTML = choiceDiv.innerHTML + "<input type = 'text' name = 'choice'>"
-// }
-
-// //empty array of choices
-
-// var choices = [];
-
-// function answer() {
-//     event.preventDefault();
-//     //choices
-//     var choice1 = document.getElementById("choice1").value;
-//     var choice2 = document.getElementById("choice2").value;
-//     var choice3 = document.getElementById("choice3").value;
-
-//     //push to array
-//     choices.push(choice1, choice2, choice3);
-
-//     //make random choice
-//     var random = choices[Math.floor(Math.random() * choices.length)];
-
-//     console.log(random);
-
-//     //display on HTML
-//     document.getElementById("Decisions").innerHTML = random;
-
-
-// };
+   
+    
+        
+   

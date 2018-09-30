@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title> The Radomizer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,11 +14,11 @@
     <form>
         <h2> Make a list of your options and The Randomizer will choose for you. </h2>
         <br />
-        <input type="text" name="choices" placeholder="enter items..." id="choiceItems">
-        <button id="btn" onclick="addToList()">Add</button>
+        <input type="text" placeholder="enter items..." id="options"/>
+        <button  onclick="addToList()">Add</button>
         <button id="btn" onclick="changeIt()">Randomize!!</button>
-        <ol id="options">
-        </ol>
+        <div id="itemsList">
+        </div>
         <div id="container" />
         <br />
         <h2> The Radomizer has chosen: </h2>
