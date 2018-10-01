@@ -18,6 +18,8 @@ function addToList() {
     //display what is in the list array on screen in the set area
     areaToDisplay.innerHTML = list
 
+    document.getElementById('options').value = "";
+
     //console.log(list);
 
     }
